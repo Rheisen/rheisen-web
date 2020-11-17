@@ -1,0 +1,36 @@
+$app-colors: (
+    'primary': #353F83,
+    'primary-accent': #daddf0,
+    'primary-tint': #6b76c3,
+    'secondary': #a9d4ff,
+    'dark': #414351,
+    'alert': #F44336,
+    'off-white': #fafafa,
+    'off-black': #4A4A4A,
+    'white': #ffffff,
+    'black': #000000,
+);
+
+@function color($key, $option: opacity, $flex-val: null) {
+  @if $option == opacity {
+    @if $flex-val == null {
+      $flex-val: 1;
+    }
+    @if map-has-key($app-colors, $key) {
+      @return rgba(map-get($app-colors, $key), $flex-val);
+    }
+
+    @warn "Unknown `#{key}` in colors"
+  } @else if $option == lighten {
+    @if $flex-val == null {
+      $flex-val: 15%;
+    }
+    @if map-has-key($app-colors, $key) {
+      @return lighten(rgba(map-get($app-colors, $key), 1), $flex-val);
+    }
+
+    @warn "Unknown `#{key}` in colors"
+  } @else {
+    @warn "Unsuported option"
+  }
+}

@@ -1,0 +1,73 @@
+@import 'styles/utils/colors';
+@import 'styles/utils/transitions';
+
+@mixin base-action-text {
+    @include ease-in-out(.2s);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+    letter-spacing: .25px;
+    color: color('primary-tint', 'opacity', 0.8);
+    cursor: pointer;
+
+    &:hover {
+        color: color('primary-tint', 'opacity', 1);
+    }
+}
+
+@mixin underlined-action-text {
+    @include base-action-text;
+
+    span {
+        padding-bottom: .2rem;
+        border-bottom: .1rem dotted color('primary-tint', 'opacity', 0.8);
+    }
+
+    &:hover {
+        span {
+            border-bottom: .1rem dotted color('primary-tint', 'opacity', 1);
+        }
+        color: color('primary-tint', 'opacity', 1);
+    }
+}
+
+@mixin content-paragraph {
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: color('dark');
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    
+    a {
+        @include base-action-text;
+    }
+}
+
+@mixin small-splash-wrapper {
+    box-sizing: border-box;
+    min-height: 12.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url('../../common-assets/splash-background-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    h2 {
+        font-family: 'Lato', 'Roboto', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: color('white');
+    }
+}
+
