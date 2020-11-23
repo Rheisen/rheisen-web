@@ -1,30 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rheisen.me Frontend
 
-## Getting Started
+This is the frontend code for [rheisen.me](https://www.rheisen.me), which is a portfolio website to showcase software
+projects, work experiences, photography, and writings.
 
-First, run the development server:
+### Project Setup
+
+Node is needed to run this project locally. If you do not have Node already, I recommend using NVM to manage node
+versions ([web link](https://github.com/nvm-sh/nvm)). Once you have Node, I'd recommend using yarn to build the project
+(`npm install -g yarn` to install yarn globally).
+
+Once you have Node and yarn installed, this script will install the project dependencies:
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+### Running the project
+
+Running the project locally is straightforward:
+
+```bash
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Notes
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This frontend is built with the Next.js React framework using TypeScript and SCSS modules.

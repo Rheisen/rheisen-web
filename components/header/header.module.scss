@@ -1,0 +1,184 @@
+@import 'styles/utils/variables';
+@import 'styles/utils/colors';
+@import 'styles/utils/breakpoints';
+@import 'styles/utils/transitions';
+
+.headerWrapper {
+    position: fixed;
+    height: 5rem;
+    width: 100%;
+    background-color: color('off-white');
+    z-index: 200;
+
+    @include breakpoint('mobile') {
+        height: 4rem;
+    }
+
+    .headerContainer {
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        max-width: $content-max-width;
+        height: 5rem;
+        padding: 0 3rem;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @include breakpoint('mobile') {
+            height: 4rem;
+        }
+
+        .homeLink {
+            padding: .75rem 0 .4rem 0;
+            border-radius: 2px;
+            outline: none;
+            font-family: 'Kalam', 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.35rem;
+            color: color('primary');
+            text-decoration: none;
+            text-transform: uppercase;
+
+            @include breakpoint('mobile') {
+                font-size: 1.5rem;
+            }
+        }
+
+        .menuIcon {
+            @include ease-in-out(.2s);
+            border-radius: 5rem;
+            padding: .5rem;
+            margin-left: auto;
+            margin-right: -.5rem;
+            cursor: pointer;
+            color: color('primary');
+
+            &:hover {
+                color: color('primary-tint');
+            }
+        }
+
+        .exitIcon {
+            @include ease-in-out(.2s);
+            border-radius: 5rem;
+            padding: .5rem;
+            margin-left: auto;
+            margin-right: -.5rem;
+            cursor: pointer;
+            color: color('primary-tint', 'opacity', .7);
+            background-color: color('primary-accent', 'lighten', 5);
+
+            &:hover {
+                color: color('primary-tint', 'opacity', 1);
+            }
+        }
+    }
+
+    .navWrapper {
+        @include breakpoint('mobile', 'phablet') {
+            position: absolute;
+            top: 5rem;
+            left: 0;
+            width: 100%;
+            display: block;
+            height: calc(100vh - 5rem);
+            background-color: color('off-white', 'opacity', .95);
+        }
+
+        @include breakpoint('mobile') {
+            top: 4rem;
+            height: calc(100vh - 4rem);
+        }
+    }
+
+    .navContainer {
+        box-sizing: border-box;
+        position: absolute;
+        top: 5rem;
+        right: 2.25rem;
+        display: flex;
+        flex-direction: column;
+        width: 14rem;
+        background-color: color('primary-accent', 'lighten', 5);
+        border-bottom-right-radius: .2rem;
+        border-bottom-left-radius: .2rem;
+        text-align: left;
+
+        @include breakpoint('mobile', 'phablet') {
+            position: fixed;
+            right: 0;
+            width: 18rem;
+            height: calc(100vh - 5rem);
+            justify-content: center;
+        }
+
+        @include breakpoint('mobile') {
+            top: 4rem;
+            height: calc(100vh - 4rem);
+        }
+
+        a {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 0 1rem 2rem;
+            outline: none;
+            font-family: 'Lato';
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: .25px;
+            text-decoration: none;
+            color: color('primary-tint');
+
+            @include breakpoint('mobile', 'phablet') {
+                font-size: 1.3rem;
+                padding: 1.5rem 2rem 1.5rem 2rem;
+            }
+
+            &:hover {
+                span {
+                    opacity: 1;
+                }
+
+                .linkIcon {
+                    opacity: 1;
+                }
+            }
+
+            span {
+                @include ease-in-out(.2s);
+                padding-top: .2rem;
+                opacity: .7;
+
+                @include breakpoint('mobile', 'phablet') {
+                    text-align: right;
+                    padding-top: .3rem;
+                }
+            }
+
+            .linkIcon {
+                @include ease-in-out(.2s);
+                margin-left: auto;
+                margin-right: 1rem;
+                opacity: .7;
+
+                @include breakpoint('mobile', 'phablet') {
+                    margin-right: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+.pageBuffer {
+    height: 5rem;
+
+    @include breakpoint('mobile') {
+        height: 4rem;
+    }
+}

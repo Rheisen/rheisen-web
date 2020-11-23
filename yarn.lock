@@ -6451,7 +6451,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"prop-types@npm:15.7.2":
+"prop-types@npm:15.7.2, prop-types@npm:^15.7.2":
   version: 15.7.2
   resolution: "prop-types@npm:15.7.2"
   dependencies:
@@ -6613,6 +6613,17 @@ fsevents@~2.1.2:
   peerDependencies:
     react: 17.0.1
   checksum: 6a70028fbe3c95e0056c5e8ce065b4a9b8d4ff3bffde9b016454072bde5e4b012af7668ca45b7235ace428267d5be5237b68ea87ce8c296e54e81a8d678a4355
+  languageName: node
+  linkType: hard
+
+"react-feather@npm:^2.0.9":
+  version: 2.0.9
+  resolution: "react-feather@npm:2.0.9"
+  dependencies:
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ^16.8.6 || ^17
+  checksum: 302a5ce0bffbd789b0c9ffe29146191db1b0926ae090bb48486f9cb40267d4e636822fa468dfb8614cbc0b3ac13e394937cd51327ec6c6b7ec6032060dfafbd2
   languageName: node
   linkType: hard
 
@@ -6927,6 +6938,7 @@ fsevents@~2.1.2:
     next: 10.0.1
     react: 17.0.1
     react-dom: 17.0.1
+    react-feather: ^2.0.9
     sass: ^1.29.0
     typescript: ^4.0.5
   languageName: unknown
