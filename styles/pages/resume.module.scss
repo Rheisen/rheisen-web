@@ -1,0 +1,117 @@
+@import 'styles/utils/variables';
+@import 'styles/utils/common-styles';
+@import 'styles/utils/colors';
+@import 'styles/utils/breakpoints';
+@import 'styles/utils/transitions';
+
+.resumeWrapper {
+    box-sizing: border-box;
+
+    .resumeHeaderContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+        padding: .5rem 0;
+        margin: auto;
+        border-radius: 10rem;
+        color: color('white');
+        background: url('/images/backgrounds/splash-background-min.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        .headerIcon {
+            color: color('white', 'opacity', 1);
+        }
+    }
+
+    .resumeSectionContainer {
+        box-sizing: border-box;
+        margin: 3rem 0;
+    }
+
+    .educationContainer {
+        margin-bottom: 2.5rem;
+
+        header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: .5rem;
+
+            @include breakpoint('mobile') {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            h4 {
+                font-family: 'Lato', 'Roboto', sans-serif;
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+
+            .timeframe {
+                margin-left: auto;
+                font-size: .9rem;
+                font-family: 'Roboto', sans-serif;
+                font-style: italic;
+                color: color('off-black');
+
+                @include breakpoint('mobile') {
+                    margin: .75rem 0 0 0;
+                }
+            }
+        }
+
+        .degree {
+            @include underlined-action-text;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .bold {
+            color: #000;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+            color: color('off-black');
+        }
+    }
+
+    .skillContainer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skillLanguage, .skillFramework, .skillDatabase, .skillTool {
+        display: inline-block;
+        padding: .75rem 3rem;
+        margin-bottom: 1rem;
+        margin-right: 1.1rem;
+        border-radius: 10rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2rem;
+        color: color('primary-tint');
+        background-color:color('primary-accent', 'opacity', .8);
+    }
+
+    .endLinkContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .resumeProjectsLink {
+        @include underlined-action-text;
+    }
+}

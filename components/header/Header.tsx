@@ -62,7 +62,7 @@ export const Header: React.FC = () => {
                   <Link href='/resume'>
                     <a><span>Resume</span><FileText size={20} className={styles.linkIcon} /></a>
                   </Link>
-                  <Link href='/contact-me'>
+                  <Link href='/contact'>
                     <a><span>Contact Me</span><Mail size={20} className={styles.linkIcon} /></a>
                   </Link>
                 </div>

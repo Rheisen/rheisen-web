@@ -1,0 +1,21 @@
+@import 'styles/utils/colors';
+
+.splashHeaderWrapper {
+    box-sizing: border-box;
+    min-height: 12.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url('/images/backgrounds/splash-background-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    h2 {
+        font-family: 'Lato', 'Roboto', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: color('white');
+    }
+}
