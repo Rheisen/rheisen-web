@@ -3,8 +3,8 @@
 @import 'styles/utils/transitions';
 @import 'styles/utils/breakpoints';
 
-.positionSectionWrapper {
-    .positionHeaderContainer {
+.sectionWrapper {
+    .headerContainer {
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
@@ -16,11 +16,11 @@
         }
     }
 
-    .positionTitle {
+    .experienceTitle {
         @include underlined-action-text;
     }
 
-    .positionTimeframe {
+    .experienceTimeframe {
         margin-left: auto;
         font-size: .9rem;
         font-family: 'Roboto', sans-serif;
@@ -32,7 +32,7 @@
         }
     }
 
-    .positionDescription {
+    .experienceDescription {
         margin-top: 1rem;
     }
 }

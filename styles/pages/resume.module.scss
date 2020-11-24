@@ -35,40 +35,8 @@
     .educationContainer {
         margin-bottom: 2.5rem;
 
-        header {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            margin-bottom: .5rem;
-
-            @include breakpoint('mobile') {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            h4 {
-                font-family: 'Lato', 'Roboto', sans-serif;
-                font-size: 1.4rem;
-                font-weight: 500;
-            }
-
-            .timeframe {
-                margin-left: auto;
-                font-size: .9rem;
-                font-family: 'Roboto', sans-serif;
-                font-style: italic;
-                color: color('off-black');
-
-                @include breakpoint('mobile') {
-                    margin: .75rem 0 0 0;
-                }
-            }
-        }
-
-        .degree {
-            @include underlined-action-text;
-            display: inline-block;
-            margin-bottom: 1rem;
+        .reducedTopMargin {
+            margin-top: -1.5rem;
         }
 
         .bold {
