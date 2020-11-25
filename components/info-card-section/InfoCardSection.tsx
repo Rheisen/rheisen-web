@@ -5,18 +5,16 @@ import InfoCard, { InfoCardProps } from 'components/info-card';
 import styles from './infoCardSection.module.scss';
 
 interface InfoCardSectionProps extends InfoCardProps {
-  children?: React.ReactNode
+  children?: React.ReactNode;
 }
 
-export const InfoCardSection: React.FC<InfoCardSectionProps> = (props) => {
+export const InfoCardSection: React.FC<InfoCardSectionProps> = (props: InfoCardSectionProps) => {
   return (
     <section className={styles.infoCardSectionWrapper}>
       <div className={styles.infoCardSectionContainer}>
         <InfoCard {...props} />
-        <section className={styles.contentSectionWrapper}>
-          {props.children}
-        </section>
+        <section className={styles.contentSectionWrapper}>{props.children}</section>
       </div>
     </section>
   );
-}
+};

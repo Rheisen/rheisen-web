@@ -4,7 +4,7 @@ import { Heart } from 'react-feather';
 import styles from './footer.module.scss';
 
 export const Footer: React.FC = () => {
-  return(
+  return (
     <footer className={styles.wrapper}>
       <section className={styles.container}>
         <span>
@@ -13,4 +13,4 @@ export const Footer: React.FC = () => {
       </section>
     </footer>
   );
-}
+};

@@ -4,7 +4,7 @@ import Layout from 'components/layout';
 import SplashHeader from 'components/splash-header';
 
 const Projects: React.FC = () => {
-  return(
+  return (
     <Layout>
       <SplashHeader>
         <h2>Projects</h2>
