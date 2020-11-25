@@ -6,7 +6,7 @@ import InfoCardSection from 'components/info-card-section';
 
 import styles from 'styles/pages/home.module.scss';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <Layout>
       <section className={styles.splashWrapper}>
@@ -16,28 +16,23 @@ export default function Home() {
             writing, and philosophy on a semi-regular basis. Please feel invited to poke around, and reach out if you
             would like to connect.
           </p>
-          <p className={styles.closingMessage}>
-            Have a great day,
-          </p>
-          <h2 className={styles.signature}>
-            Rheisen
-          </h2>
+          <p className={styles.closingMessage}>Have a great day,</p>
+          <h2 className={styles.signature}>Rheisen</h2>
         </div>
         <div className={styles.pageDownContainer}>
           <ArrowDownCircle className={styles.pageDownIcon} size={28} />
         </div>
       </section>
 
-      <InfoCardSection location={true}> 
+      <InfoCardSection location={true}>
         <div className={styles.infoCardSectionContentWrapper}>
           <h2>About Me</h2>
           <p>
-            Getting to know someone is a complex process. It's easy to forget that every person contains a
-            lifetime of formative experiences, and likewise it's easy to assume that the people we interact with
-            know more about our personal experiences than we've revealed to them. It's impossible to share all of our
-            experiences with another person, or even a decent fraction of them in a timely manner. How then should
-            we go about conveying ourselves so that we are understood by others, and so that we form meaningful
-            relationships?
+            Getting to know someone is a complex process. It&apos;s easy to forget that every person contains a lifetime
+            of formative experiences, and likewise it&apos;s easy to assume that the people we interact with know more about our
+            personal experiences than we've revealed to them. It's impossible to share all of our experiences with
+            another person, or even a decent fraction of them in a timely manner. How then should we go about conveying
+            ourselves so that we are understood by others, and so that we form meaningful relationships?
           </p>
           <p>
             I can't claim to have the "correct" answer to this question, but I think that we can benefit from
@@ -107,5 +102,7 @@ export default function Home() {
         </div>
       </InfoCardSection>
     </Layout>
-  )
-}
+  );
+};
+
+export default Home;
