@@ -1,0 +1,58 @@
+@import 'styles/utils/variables';
+@import 'styles/utils/_common-styles.scss';
+@import 'styles/utils/colors';
+
+.projectsWrapper {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $content-max-width;
+    padding: 4rem 3rem;
+    margin: auto;
+
+    .projectContainer {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        article {
+
+            h4 {
+                font-family: 'Lato', 'Roboto', sans-serif;
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+
+            .tagContainer {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin: .75rem 0 .5rem 0;
+
+                div {
+                    margin-right: 1rem;
+
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            p {
+                @include content-paragraph;
+            }
+
+            a {
+                @include underlined-action-text;
+            }
+        }
+    }
+
+    .lineBreak {
+        width: 40%;
+        height: .2rem;
+        margin: 2rem auto 2rem auto;
+        border-radius: 2px;
+        // background-color: color('primary-accent');
+    }
+}

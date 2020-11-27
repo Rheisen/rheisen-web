@@ -1,0 +1,17 @@
+@import 'styles/utils/colors';
+
+.tagWrapper {
+    margin-bottom: .5rem;
+
+    .hashtag {
+        color: color('primary-tint');
+    }
+
+    .text {
+        margin-left: .25rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1.1rem;
+        color: color('dark');
+    }
+}
