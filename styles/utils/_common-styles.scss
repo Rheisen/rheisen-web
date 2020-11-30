@@ -4,7 +4,7 @@
 @mixin base-action-text {
     @include ease-in-out(.2s);
     font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     font-weight: 500;
     text-decoration: none;
@@ -38,7 +38,7 @@
     margin-bottom: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
     color: color('dark');
 

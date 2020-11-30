@@ -1,4 +1,5 @@
 @import 'styles/utils/variables';
+@import 'styles/utils/breakpoints';
 @import 'styles/utils/_common-styles.scss';
 @import 'styles/utils/colors';
 
@@ -15,7 +16,80 @@
         display: flex;
         flex-direction: row;
 
+        @include breakpoint('mobile', 'phablet') {
+            flex-direction: column;
+        }
+
+        aside {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 15rem;
+            height: 11rem;
+            border-radius: .2rem;
+            background-color: color('primary-accent');
+
+            @include breakpoint('tablet') {
+                min-width: 12.5rem;
+                height: 9rem;
+            }
+
+            @include breakpoint('mobile', 'phablet') {
+                min-width: 100%;
+                max-width: 100%;
+                height: 6rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .imageContainer {
+                position: relative;
+                width: 5rem;
+                height: 5rem;
+            }
+
+            h2 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 3rem;
+                color: color('white');
+            }
+        }
+
+        .xavierAside {
+            background-color: color('dark');
+
+            .xavierIcon {
+                color: color('white');
+            }
+        }
+
+        .blackbearAside {
+            background-color: #353D6D;
+        }
+
+        .rheisenAside {
+            background-color: color('primary');
+            background: url('/images/backgrounds/splash-background-min.jpg');
+            background-size: fill;
+            background-position: 60% 30%;
+            background-repeat: no-repeat;
+
+            h2 {
+                margin-top: .6rem;
+                font-family: 'Kalam', 'Roboto', sans-serif;
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+        }
+
         article {
+            flex-shrink: 2;
+            margin-left: 2rem;
+
+            @include breakpoint('mobile', 'phablet') {
+                margin-left: .1rem;
+            }
 
             h4 {
                 font-family: 'Lato', 'Roboto', sans-serif;

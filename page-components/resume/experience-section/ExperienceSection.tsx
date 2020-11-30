@@ -19,7 +19,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = (props: Exper
         </span>
         {props.timeframe ? <span className={styles.experienceTimeframe}>{props.timeframe}</span> : null}
       </header>
-      {displayChildren ? <div className={styles.experienceDescription}>{props.children}</div> : null}
+      {displayChildren ? <div className={styles.desc}>{props.children}</div> : null}
     </section>
   );
 };

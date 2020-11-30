@@ -30,7 +30,7 @@ const Resume: React.FC = () => {
                   During this brief internship I worked with the Decision Engine team on an ongoing project to refactor
                   core application functionality from Ruby on Rails to Java Spring. I made modifications and additions
                   to controllers, models, and view layers in both frameworks. Additionally, I worked to create Internal
-                  Admin pages for new features with React, and modified Python project configuration scripts.
+                  Admin pages for new features with React, and modified some Python project configuration scripts.
                 </p>
               </ExperienceSection>
               <ExperienceSection title={'Software Engineering Co-op'} timeframe={'Jan 2019 - Aug 2019'}>
@@ -42,14 +42,14 @@ const Resume: React.FC = () => {
                   Rails 5.
                 </p>
                 <p>
-                  Notable proof-of-concept work included developing a prototype chatbot to show the viability of adding
-                  app functionality to Google Home and other IoT devices. I worked directly with the VP of Engineering
-                  and the Chief Medical Officer, and built the prototype with Firebase, DialogFlow, and React. The end
-                  product was notable for its live-transfer feature, which allowed someone chatting with the bot to
-                  request transfer to a representative, who could join the conversation from an internal messaging
-                  dashboard. This proof of concept was presented internally to the company by myself at one of the
-                  &quot;All Hands&quot; meetings, and presented at health tech conferences by the company leadership
-                  team.
+                  The most interesting proof-of-concept project that I worked on during this time was the creation of a
+                  prototype chatbot, which showcased the potential features we could provide through integrations with
+                  Google Home and other IoT devices. I worked directly with the VP of Engineering and the Chief Medical
+                  Officer, and built the prototype with Firebase, DialogFlow, and React. The end product was notable for
+                  its live-transfer feature, which allowed someone chatting with the bot to request transfer to a
+                  representative, who could then join the conversation from an internal messaging dashboard. I presented
+                  this project internally at one of the &quot;All Hands&quot; meetings, and it was presented at health
+                  tech conferences by the company leadership team.
                 </p>
               </ExperienceSection>
             </ExperienceArticle>
@@ -57,9 +57,18 @@ const Resume: React.FC = () => {
             <ExperienceArticle org={'Khoury College @ NU'}>
               <ExperienceSection title={'Object Oriented Design TA'} timeframe={'Jan 2020 - May 2020'}>
                 <p>
-                  As a more experienced TA I led exam review sessions, proctored exam sessions, and helped to grade more
-                  exams. I held office hours on weekends where I had a good attendance, and graded projects with
-                  consideration and constructive feedback.
+                  In my second time as a TA for this course I focused on improving the feedback I gave to students on
+                  their projects and providing a better experience for the students who came to my office hours. I also
+                  took on additional responsibilities in leading exam review sessions and proctoring exam sessions. Some
+                  of the resources I provided to help students prepare for the first exam can be found{' '}
+                  <a
+                    href="https://docs.google.com/presentation/d/1mb1vyeIew9ygwrBAD-NPH-43A6EdyqciDgbd0_CLwKk/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    here
+                  </a>
+                  .
                 </p>
               </ExperienceSection>
               <ExperienceSection title={'Object Oriented Design TA'} timeframe={'Sep 2018 - Dec 2018'}>
@@ -79,7 +88,7 @@ const Resume: React.FC = () => {
                   experience design and the design process. We worked with a Northeastern startup to create a brand for
                   an inclusive suncare product, which culminated in the development of a landing page and packaging
                   designs. I developed the landing page using React and Prismic (CMS), which allowed the creators to
-                  change the text, images, etc. as needed when we handed off the project.
+                  change the text, images, etc. as needed after we handed off the project.
                 </p>
               </ExperienceSection>
             </ExperienceArticle>
@@ -115,12 +124,21 @@ const Resume: React.FC = () => {
             <ExperienceArticle org={'Northeastern University'} timeframe={'Sep 2016 - Dec 2020'}>
               <ExperienceSection title={'BS Computer Science & Entrepreneurship'}>
                 <p>
-                  Over the duration of my time in University I pushed myself to take the hardest versions of courses,
-                  challenged myself to take every opportunity to learn, and formed friendships with individuals who
-                  continue to help make me a better person. In addition to growing as a software engineer and as a
-                  student of computer science, I grew as a person through traveling abroad, studying abroad in Madrid,
-                  and pursuing my interests with philosophy and spirituality. As a result of those interests my courses
-                  in Entrepreneurship became centered around the formation of socially responsible businesses and social
+                  From my first year in university through my last, I challenged myself to take the courses where I
+                  would be pushed to learn the most. Having been a self-taught developer before entering college, I was
+                  amazed by how much I didn&apos;t know, and thrilled to be able to put names to some of the practices
+                  and patterns I had been using for years. I learned a great deal about the different types of
+                  programming languages and their trade-offs, how to read and critique code, and how to work effectively
+                  in pair programming environments. Getting to see how computer systems and networks are constructed at
+                  the lowest level gave me an immense appreciation for higher-level languages and a deep understanding
+                  of the structures underlying applications of all stripes. Although I learned a great deal about
+                  computer science and software engineering in university, I realize that there is still so much to
+                  learn, and I&apos;m very excited about that.
+                </p>
+                <p>
+                  The second part of my degree was in business and entrepreneurship, which carried over from my
+                  interests in high school. After studying more philosophical and spiritual movements I tailored my
+                  entrepreneurial interests into the formation of socially responsible businesses and social
                   enterprises.
                 </p>
               </ExperienceSection>
@@ -145,13 +163,15 @@ const Resume: React.FC = () => {
             <ExperienceArticle org={'Albemarle High School'} timeframe={'Sep 2012 - May 2016'}>
               <ExperienceSection title={'Advanced High School Diploma'}>
                 <p>
-                  My high school experience improved over time. I joined Albemarle knowing only two other students, and
-                  spent my first two years struggling with bouts of escapism. With the help of mentors and a gradual
-                  change in outlook, I was able to accomplish much in my last two years of high school. My motivation
-                  shifted from being externally driven to internally driven, and as a result I was able to establish a
-                  number of extracuricular activities related to computer science and entrepreneurship that led to novel
-                  opportunities and formative experiences. I am very grateful to have had the support of Alexis Mason,
-                  Adarsh Ramakrishnan, Abby Baum, Todd Menadier, and of course my family.
+                  Throughout high school I was interested in computer science and entrepreneurship, and started the
+                  first computer science and entrepreneurship clubs at Albemarle in my first three years with the help
+                  of mentors and faculty. Being in close proximity to the University of Virginia, we were able to tap
+                  into the computer science and entrepreneurship programs at the university to provide guest lectures
+                  and networks for students interested in computer science and/or entrepreneurship. In my final years at
+                  Albemarle this network would become invaluable in creating novel opportunities and formative
+                  experiences for me as I worked in the UVA iLab and at HackCville with both young and experienced
+                  entrepreneurs. I am very grateful to have had the support and guidance of Alexis Mason, Adarsh
+                  Ramakrishnan, Rick Kulow, Abby Baum, and Todd Menadier.
                 </p>
               </ExperienceSection>
             </ExperienceArticle>

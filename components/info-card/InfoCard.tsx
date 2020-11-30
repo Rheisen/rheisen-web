@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, GitHub, Gitlab, Mail, Linkedin, Download } from 'react-feather';
+import { MapPin, GitHub, Gitlab, Mail, Clipboard, Linkedin, Download } from 'react-feather';
 
 import styles from './infoCard.module.scss';
 
@@ -40,7 +40,7 @@ export const InfoCard: React.FC<InfoCardProps> = (props: InfoCardProps = default
         ) : null}
         {props.linkedin ? (
           <div className={styles.iconInfoContainer}>
-            <Linkedin className={styles.linkedinIcon} size={24} />
+            <Clipboard className={styles.linkedinIcon} size={24} />
             <a href="https://linkedin.com/in/rheisen-dennis" target="_blank" rel="noopener noreferrer">
               linkedin.com/in/rheisen-dennis
             </a>
