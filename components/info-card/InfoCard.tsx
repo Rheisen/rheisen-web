@@ -1,5 +1,7 @@
 import React from 'react';
-import { MapPin, GitHub, Gitlab, Mail, Clipboard, Linkedin, Download } from 'react-feather';
+import { MapPin, GitHub, Gitlab, Mail, Clipboard, Download } from 'react-feather';
+
+import Image from 'components/image';
 
 import styles from './infoCard.module.scss';
 
@@ -23,7 +25,13 @@ export const InfoCard: React.FC<InfoCardProps> = (props: InfoCardProps = default
   return (
     <aside>
       <section className={styles.infoCard}>
-        <img src={'/images/profile.jpg'} alt="Rheisen Dennis" />
+        <Image
+          src={'/images/profile.jpg'}
+          thumb={'/images/profile.jpg'}
+          width={864}
+          height={864}
+          alt="Rheisen Dennis"
+        />
         <div className={styles.fullLineBreak} />
         <div className={styles.partialLineBreak} />
         {props.location ? (
