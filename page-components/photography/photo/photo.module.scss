@@ -14,7 +14,7 @@
     }
 }
 
-.enlargedImageWrapper {
+.modalWrapper {
     position: fixed;
     z-index: 300;
     display: flex;
@@ -25,7 +25,7 @@
     width: 100%;
     background-color: color('off-white', 'opacity', .95);
     
-    picture, .iconContainer {
+    .photoContainer, .iconContainer {
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
@@ -35,7 +35,7 @@
         margin: 0 auto 0 auto;
     }
 
-    picture {
+    .photoContainer {
         height: calc(100vh - 5rem);
 
         @include breakpoint('mobile', 'phablet') {

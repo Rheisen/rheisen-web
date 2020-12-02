@@ -4,7 +4,7 @@ import useIntersectionObserver from 'hooks/use-intersection-observer';
 
 import styles from './image.module.scss';
 
-interface ImageProps {
+interface ImageContainerProps {
   src: string;
   thumb: string;
   height: number;
@@ -12,15 +12,43 @@ interface ImageProps {
   alt: string;
 }
 
-export const Image: React.FC<ImageProps> = (props: ImageProps) => {
+interface ImageProps {
+  src: string;
+  thumb: string;
+  alt: string;
+}
+
+const Image: React.FC<ImageProps> = (props: ImageProps) => {
+  const [loading, setLoading] = React.useState(true);
+
+  return (
+    <>
+      <img
+        className={styles.thumbnail}
+        src={props.thumb}
+        alt={props.alt}
+        style={{ visibility: loading ? 'visible' : 'hidden' }}
+      />
+      <img
+        className={styles.image}
+        src={props.src}
+        onLoad={() => setLoading(false)}
+        alt={props.alt}
+        style={{ opacity: loading ? 0 : 1 }}
+      />
+    </>
+  );
+};
+
+export const ImageContainer: React.FC<ImageContainerProps> = (props: ImageContainerProps) => {
   const ref = React.useRef<HTMLDivElement>(null);
-  const [isVisible, setIsVisible] = React.useState(false);
+  const [visible, setVisible] = React.useState(false);
 
   useIntersectionObserver({
     target: ref,
     onIntersect: ([{ isIntersecting }], observerElement) => {
       if (isIntersecting) {
-        setIsVisible(true);
+        setVisible(true);
         observerElement.unobserve(ref.current);
       }
     },
@@ -29,7 +57,7 @@ export const Image: React.FC<ImageProps> = (props: ImageProps) => {
 
   return (
     <div ref={ref} className={styles.imageContainer} style={{ paddingBottom: `${aspectRatio}%` }}>
-      {isVisible && <img className={styles.image} src={props.src} alt={props.alt} />}
+      {visible && <Image src={props.src} thumb={props.thumb} alt={props.alt} />}
     </div>
   );
 };

@@ -10,7 +10,7 @@ interface useIntersectionObserverProps {
 const useIntersectionObserver = ({
   target,
   onIntersect,
-  threshold = 0.05,
+  threshold = 0.1,
   rootMargin = '0px',
 }: useIntersectionObserverProps): void => {
   React.useEffect(() => {

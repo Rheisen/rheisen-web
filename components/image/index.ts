@@ -1,3 +1,3 @@
-import { Image } from './Image';
+import { ImageContainer as Image } from './Image';
 
 export default Image;

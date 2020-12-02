@@ -13,36 +13,41 @@ interface PhotoProps {
 }
 
 export const Photo: React.FC<PhotoProps> = (props: PhotoProps) => {
-  const [enlarged, setEnlarged] = useState(false);
+  const [modalActive, setModalActive] = useState(false);
 
   const handlePhotoClick = () => {
-    if (enlarged) {
-    } else {
-      setEnlarged(true);
-      document.body.classList.add('no-scroll');
-    }
+    setModalActive(true);
+    document.body.classList.add('no-scroll');
   };
 
   const handleExitClick = () => {
-    setEnlarged(false);
+    setModalActive(false);
     document.body.classList.remove('no-scroll');
   };
 
   return (
-    <div className={enlarged ? styles.enlargedImageWrapper : styles.imageWrapper}>
-      {enlarged ? (
-        <div className={styles.iconContainer}>
-          <X className={styles.exitIcon} size={28} aria-label="Exit Image Display" onClick={handleExitClick} />
+    <>
+      <div className={styles.imageWrapper}>
+        <div className={styles.photoContainer} onClick={handlePhotoClick}>
+          <Image
+            src={`/images/photos/${props.name}.jpg`}
+            thumb={`/images/photo-thumbnails/${props.name}.jpg`}
+            height={props.height}
+            width={props.width}
+            alt={props.alt}
+          />
+        </div>
+      </div>
+      {modalActive ? (
+        <div className={styles.modalWrapper}>
+          <div className={styles.iconContainer}>
+            <X className={styles.exitIcon} size={28} aria-label="Exit Image Display" onClick={handleExitClick} />
+          </div>
+          <div className={styles.photoContainer}>
+            <img src={`/images/photos/${props.name}.jpg`} alt={props.alt} />
+          </div>
         </div>
       ) : null}
-      {/* <img src={`/images/photos/${props.imageName}.jpg`} alt={props.alt} onClick={handlePhotoClick} /> */}
-      <Image
-        src={`/images/photos/${props.name}.jpg`}
-        thumb={`/images/photo-thumbnails/${props.name}.jpg}`}
-        height={props.height}
-        width={props.width}
-        alt={props.alt}
-      />
-    </div>
+    </>
   );
 };

@@ -8,6 +8,20 @@
     background: color('primary-accent', 'lighten', 5);
 }
 
-.image {
+.image, .thumbnail {
     position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    transition: opacity 400ms ease 0ms;
+}
+
+.thumbnail {
+    filter: blur(15px);
+    transform: scale(1.1);
+    transition: visibility 0ms ease 400ms;
 }
