@@ -127,13 +127,13 @@ const Resume: React.FC = () => {
                   From my first year in university through my last, I challenged myself to take the courses where I
                   would be pushed to learn the most. Having been a self-taught developer before entering college, I was
                   amazed by how much I didn&apos;t know, and thrilled to be able to put names to some of the practices
-                  and patterns I had been using for years. I learned a great deal about the different types of
-                  programming languages and their trade-offs, how to read and critique code, and how to work effectively
-                  in pair programming environments. Getting to see how computer systems and networks are constructed at
-                  the lowest level gave me an immense appreciation for higher-level languages and a deep understanding
-                  of the structures underlying applications of all stripes. Although I learned a great deal about
-                  computer science and software engineering in university, I realize that there is still so much to
-                  learn, and I&apos;m very excited about that.
+                  and patterns I had been using for years. I learned a great deal about different types of programming
+                  languages and their trade-offs, how to read and critique code, and how to work effectively in pair
+                  programming environments. Getting to see how computer systems and networks are constructed at the
+                  lowest level gave me an immense appreciation for higher-level languages and a deep understanding of
+                  the structures underlying applications of all stripes. Although I learned a great deal about computer
+                  science and software engineering in university, I realize that there is still so much to learn, and
+                  I&apos;m very excited about that.
                 </p>
                 <p>
                   The second part of my degree was in business and entrepreneurship, which carried over from my

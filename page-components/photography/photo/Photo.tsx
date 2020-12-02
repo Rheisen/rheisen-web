@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { X } from 'react-feather';
 
+import Image from 'components/image';
+
 import styles from './photo.module.scss';
 
 interface PhotoProps {
-  imageName: string;
+  name: string;
+  height: number;
+  width: number;
   alt: string;
 }
 
@@ -31,9 +35,14 @@ export const Photo: React.FC<PhotoProps> = (props: PhotoProps) => {
           <X className={styles.exitIcon} size={28} aria-label="Exit Image Display" onClick={handleExitClick} />
         </div>
       ) : null}
-      <picture>
-        <img src={`/images/photos/${props.imageName}.jpg`} alt={props.alt} onClick={handlePhotoClick} />
-      </picture>
+      {/* <img src={`/images/photos/${props.imageName}.jpg`} alt={props.alt} onClick={handlePhotoClick} /> */}
+      <Image
+        src={`/images/photos/${props.name}.jpg`}
+        thumb={`/images/photo-thumbnails/${props.name}.jpg}`}
+        height={props.height}
+        width={props.width}
+        alt={props.alt}
+      />
     </div>
   );
 };

@@ -1,0 +1,13 @@
+@import 'styles/utils/colors';
+
+.imageContainer {
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: color('primary-accent', 'lighten', 5);
+}
+
+.image {
+    position: absolute;
+}
