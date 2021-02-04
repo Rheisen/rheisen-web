@@ -24,6 +24,15 @@ const Resume: React.FC = () => {
           </div>
 
           <div className={styles.resumeSectionContainer}>
+            <ExperienceArticle org={'Lumin'}>
+              <ExperienceSection title={'Software Engineer'} timeframe={'Jan 2021 - Present'}>
+                <p>
+                  I am currently working at Lumin as a backend software engineer responsible for the Lumin Backend API
+                  and additional backend services supporting the Lumin Smart Panel (an IoT device for managing home
+                  energy consumption). This chapter is still being written -- stay tuned!
+                </p>
+              </ExperienceSection>
+            </ExperienceArticle>
             <ExperienceArticle org={'Wellframe'}>
               <ExperienceSection title={'Software Engineering Intern'} timeframe={'Jun 2020 - Aug 2020'}>
                 <p>
@@ -194,6 +203,7 @@ const Resume: React.FC = () => {
               <span className={styles.skillLanguage}>Ruby</span>
               <span className={styles.skillLanguage}>JavaScript / TypeScript</span>
               <span className={styles.skillLanguage}>Rust</span>
+              <span className={styles.skillLanguage}>Go</span>
               <span className={styles.skillLanguage}>HTML</span>
               <span className={styles.skillLanguage}>CSS / SCSS</span>
               <span className={styles.skillFramework}>Ruby on Rails</span>
