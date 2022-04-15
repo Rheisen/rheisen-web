@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
     <footer className={styles.wrapper}>
       <section className={styles.container}>
         <span>
-          Made with <Heart size={20} className={styles.heartIcon} /> by Rheisen Dennis
+          <Heart fill={'#daddf0'} size={28} className={styles.heartIcon} />
         </span>
       </section>
     </footer>

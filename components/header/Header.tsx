@@ -37,12 +37,6 @@ export const Header: React.FC = () => {
 
           {isNavigationVisible ? (
             <>
-              <X
-                className={styles.exitIcon}
-                size={28}
-                aria-label="Exit Page Navigation"
-                onClick={() => setNavigationVisible(false)}
-              />
               <nav className={styles.navWrapper}>
                 <div className={styles.navContainer} ref={ref}>
                   <Link href="/">
@@ -81,6 +75,12 @@ export const Header: React.FC = () => {
                   </Link>
                 </div>
               </nav>
+              <X
+                className={styles.exitIcon}
+                size={28}
+                aria-label="Exit Page Navigation"
+                onClick={() => setNavigationVisible(false)}
+              />
             </>
           ) : (
             <Menu

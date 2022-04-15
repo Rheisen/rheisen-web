@@ -25,11 +25,32 @@ const Resume: React.FC = () => {
 
           <div className={styles.resumeSectionContainer}>
             <ExperienceArticle org={'Lumin'}>
-              <ExperienceSection title={'Software Engineer'} timeframe={'Jan 2021 - Present'}>
+              <ExperienceSection title={'Backend Software Engineer'} timeframe={'Jan 2021 - Present'}>
                 <p>
-                  I am currently working at Lumin as a backend software engineer responsible for the Lumin Backend API
-                  and additional backend services supporting the Lumin Smart Panel (an IoT device for managing home
-                  energy consumption). This chapter is still being written -- stay tuned!
+                  My first large project at Lumin was to architect and implement a horizontally and vertically scalable
+                  data pipeline. The data pipleine needed to be able to ingest power-readings messages sent from our IoT
+                  devices, write the raw message reliably to a message broker, read messages from the message broker,
+                  enrich messages with data from our SQL database, forward the messages to other internal
+                  micro-services, and finally persist these messages into internal time-series databases. I developed a
+                  highly configurable Go service that accomplishes all of these tasks using Kafka as a message broker.
+                  Since the service has been deployed to production, we have been protected from down-time in our
+                  databases that historically led to loss of data, and we have been able to swap downstream services and
+                  platforms with no adverse consequences. Due to its horizontal scalability, the pipeline is also
+                  tolerant of individual node failures and is expected to be scalable with minimal changes for the next
+                  5-10 years.
+                </p>
+                <p>
+                  After finishing work on the data pipeline, my next few projects were developing and deploying high
+                  priority features to facilitate company partnerships and to improve the homeowner experience of the
+                  Lumin Smart Panel. During these projects, I developed a command line app and API for improving the
+                  developer experience of pushing new device builds to our fleet of devices, and retrieving information
+                  on devices. The command line app / API has enabled wave based deployments of new builds and greatly
+                  improved the developer experience, enabling other engineers to easily and safely deploy builds or find
+                  device details.
+                </p>
+                <p>
+                  I am currently still working at Lumin, developing more features and improving internal tools when time
+                  permits. Stay tuned!
                 </p>
               </ExperienceSection>
             </ExperienceArticle>
@@ -210,6 +231,8 @@ const Resume: React.FC = () => {
               <span className={styles.skillFramework}>Java Spring</span>
               <span className={styles.skillFramework}>React</span>
               <span className={styles.skillDatabase}>PostgreSQL</span>
+              <span className={styles.skillDatabase}>MySQL</span>
+              <span className={styles.skillDatabase}>Kafka</span>
               <span className={styles.skillTool}>Git</span>
               <span className={styles.skillTool}>Git Flow</span>
               <span className={styles.skillTool}>Vim</span>

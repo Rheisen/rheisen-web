@@ -78,7 +78,7 @@
     }
 
     .navWrapper {
-        @include breakpoint('mobile', 'phablet') {
+        @include breakpoint('mobile', 'phablet', 'tablet') {
             position: absolute;
             top: 5rem;
             left: 0;
@@ -107,7 +107,7 @@
         border-bottom-left-radius: .2rem;
         text-align: left;
 
-        @include breakpoint('mobile', 'phablet') {
+        @include breakpoint('mobile', 'phablet', 'tablet') {
             position: fixed;
             right: 0;
             width: 18rem;
@@ -135,7 +135,7 @@
             text-decoration: none;
             color: color('primary-tint');
 
-            @include breakpoint('mobile', 'phablet') {
+            @include breakpoint('mobile', 'phablet', 'tablet') {
                 font-size: 1.3rem;
                 padding: 1.5rem 2rem 1.5rem 2rem;
             }
@@ -155,7 +155,7 @@
                 padding-top: .2rem;
                 opacity: .7;
 
-                @include breakpoint('mobile', 'phablet') {
+                @include breakpoint('mobile', 'phablet', 'tablet') {
                     text-align: right;
                     padding-top: .3rem;
                 }
@@ -167,7 +167,7 @@
                 margin-right: 1rem;
                 opacity: .7;
 
-                @include breakpoint('mobile', 'phablet') {
+                @include breakpoint('mobile', 'phablet', 'tablet') {
                     margin-right: 1.25rem;
                 }
             }
