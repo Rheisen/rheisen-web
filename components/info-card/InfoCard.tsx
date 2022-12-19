@@ -37,7 +37,7 @@ export const InfoCard: React.FC<InfoCardProps> = (props: InfoCardProps = default
         {props.location ? (
           <div className={styles.iconInfoContainer}>
             <MapPin className={styles.pinIcon} size={24} />
-            <span>Boston, MA</span>
+            <span>Charlottesville, VA</span>
           </div>
         ) : null}
         {props.email ? (

@@ -31,8 +31,8 @@ export const Header: React.FC = () => {
     <>
       <header className={styles.headerWrapper}>
         <section className={styles.headerContainer}>
-          <Link href="/">
-            <a className={styles.homeLink}>Rheisen X Dennis</a>
+          <Link href="/" className={styles.homeLink}>
+            <span className={styles.homeLink}>Rheisen X Dennis</span>
           </Link>
 
           {isNavigationVisible ? (
@@ -40,38 +40,28 @@ export const Header: React.FC = () => {
               <nav className={styles.navWrapper}>
                 <div className={styles.navContainer} ref={ref}>
                   <Link href="/">
-                    <a>
                       <span>Home</span>
                       <Home size={20} className={styles.linkIcon} />
-                    </a>
                   </Link>
                   <Link href="/projects">
-                    <a>
                       <span>Projects</span>
                       <Folder size={20} className={styles.linkIcon} />
-                    </a>
                   </Link>
                   <a href="https://medium.com/@rheisen" target="_blank" rel="noopener noreferrer">
                     <span>Writings</span>
                     <PenTool size={20} className={styles.linkIcon} />
                   </a>
                   <Link href="/photography">
-                    <a>
                       <span>Photography</span>
                       <Camera size={20} className={styles.linkIcon} />
-                    </a>
                   </Link>
                   <Link href="/resume">
-                    <a>
                       <span>Resume</span>
                       <FileText size={20} className={styles.linkIcon} />
-                    </a>
                   </Link>
                   <Link href="/contact">
-                    <a>
                       <span>Contact Me</span>
                       <Mail size={20} className={styles.linkIcon} />
-                    </a>
                   </Link>
                 </div>
               </nav>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Terminal } from 'react-feather';
+import { Terminal, Sliders } from 'react-feather';
 
 import Layout from 'components/layout';
 import SplashHeader from 'components/splash-header';
@@ -70,7 +70,34 @@ const Projects: React.FC = () => {
 
         <section className={styles.projectContainer}>
           <aside className={styles.xavierAside}>
-            <Terminal size={60} className={styles.xavierIcon} />
+            <Sliders size={60} className={styles.icon} />
+          </aside>
+          <article>
+            <h4>BConf</h4>
+            <div className={styles.tagContainer}>
+              <Tag text="Go" />
+              <Tag text="Golang" />
+              <Tag text="Configuration" />
+            </div>
+            <p>
+              While developing Golang services, I began to desire a more bespoke method of configuring Go applications.
+              I wanted validation to live right alongside configuration values, I wanted a configuration structure that
+              could safely be logged after it had loaded its values, and I wanted packages within an application to be
+              able to define their own configuration. These desires led me to creat BConf (Better / Base Configuration).
+              Now, I use BConf for configuration throughout all of my Go applications, and I&apos;ve been very happy
+              with how it has simplified the application configuration in my services.
+            </p>
+            <a href="https://github.com/Rheisen/bconf" target="_blank" rel="noopener noreferrer">
+              <span>View rheisen/bconf on GitHub</span>
+            </a>
+          </article>
+        </section>
+
+        <div className={styles.lineBreak} />
+
+        <section className={styles.projectContainer}>
+          <aside className={styles.xavierAside}>
+            <Terminal size={60} className={styles.icon} />
           </aside>
           <article>
             <h4>Xavier Config</h4>

@@ -241,10 +241,8 @@ const Resume: React.FC = () => {
           </div>
 
           <div className={styles.endLinkContainer}>
-            <Link href="/projects">
-              <a className={styles.resumeProjectsLink}>
+            <Link href="/projects" className={styles.resumeProjectsLink}>
                 <span>View Projects</span>
-              </a>
             </Link>
           </div>
         </div>
