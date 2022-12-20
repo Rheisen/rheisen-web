@@ -3,9 +3,9 @@ import React from 'react';
 import styles from './splash-header.module.scss';
 
 interface SplashHeaderProps {
-  children?: React.ReactNode;
+  children: React.ReactNode;
 }
 
-export const SplashHeader: React.FC = (props: SplashHeaderProps) => {
+export const SplashHeader: React.FC<SplashHeaderProps> = (props: SplashHeaderProps) => {
   return <header className={styles.splashHeaderWrapper}>{props.children}</header>;
 };

@@ -40,28 +40,28 @@ export const Header: React.FC = () => {
               <nav className={styles.navWrapper}>
                 <div className={styles.navContainer} ref={ref}>
                   <Link href="/">
-                      <span>Home</span>
-                      <Home size={20} className={styles.linkIcon} />
+                    <span>Home</span>
+                    <Home size={20} className={styles.linkIcon} />
                   </Link>
                   <Link href="/projects">
-                      <span>Projects</span>
-                      <Folder size={20} className={styles.linkIcon} />
+                    <span>Projects</span>
+                    <Folder size={20} className={styles.linkIcon} />
                   </Link>
                   <a href="https://medium.com/@rheisen" target="_blank" rel="noopener noreferrer">
                     <span>Writings</span>
                     <PenTool size={20} className={styles.linkIcon} />
                   </a>
                   <Link href="/photography">
-                      <span>Photography</span>
-                      <Camera size={20} className={styles.linkIcon} />
+                    <span>Photography</span>
+                    <Camera size={20} className={styles.linkIcon} />
                   </Link>
                   <Link href="/resume">
-                      <span>Resume</span>
-                      <FileText size={20} className={styles.linkIcon} />
+                    <span>Resume</span>
+                    <FileText size={20} className={styles.linkIcon} />
                   </Link>
                   <Link href="/contact">
-                      <span>Contact Me</span>
-                      <Mail size={20} className={styles.linkIcon} />
+                    <span>Contact Me</span>
+                    <Mail size={20} className={styles.linkIcon} />
                   </Link>
                 </div>
               </nav>
