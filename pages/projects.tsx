@@ -50,11 +50,11 @@ const Projects: React.FC = () => {
           <article>
             <h4>Blackbear.app</h4>
             <div className={styles.tagContainer}>
-              <Tag text="Ruby on Rails" />
-              <Tag text="API" />
+              <Tag text="Kubernetes" />
+              <Tag text="Golang" />
               <Tag text="Postgres" />
-              <Tag text="Next.js" />
-              <Tag text="React" />
+              <Tag text="SolidJS" />
+              <Tag text="TailwindCSS" />
             </div>
             <p>
               I&apos;ve been working on Blackbear (under various names) for a few years. It is a passion project that
@@ -83,9 +83,9 @@ const Projects: React.FC = () => {
               While developing Golang services, I began to desire a more bespoke method of configuring Go applications.
               I wanted validation to live right alongside configuration values, I wanted a configuration structure that
               could safely be logged after it had loaded its values, and I wanted packages within an application to be
-              able to define their own configuration. These desires led me to creat BConf (Better / Base Configuration).
-              Now, I use BConf for configuration throughout all of my Go applications, and I&apos;ve been very happy
-              with how it has simplified the application configuration in my services.
+              able to define their own configuration. These desires led me to creat BConf (Better / Builder
+              Configuration). Now, I use BConf for configuration throughout all of my Go applications, and I&apos;ve
+              been very happy with how it has simplified the application configuration in my services.
             </p>
             <a href="https://github.com/Rheisen/bconf" target="_blank" rel="noopener noreferrer">
               <span>View rheisen/bconf on GitHub</span>

@@ -27,29 +27,23 @@ const Resume: React.FC = () => {
             <ExperienceArticle org={'Lumin'}>
               <ExperienceSection title={'Backend Software Engineer'} timeframe={'Jan 2021 - Present'}>
                 <p>
-                  My first large project at Lumin was to architect and implement a horizontally and vertically scalable
-                  data pipeline. The data pipleine needed to be able to ingest power-readings messages sent from our IoT
-                  devices, write the raw message reliably to a message broker, read messages from the message broker,
-                  enrich messages with data from our SQL database, forward the messages to other internal
-                  micro-services, and finally persist these messages into internal time-series databases. I developed a
-                  highly configurable Go service that accomplishes all of these tasks using Kafka as a message broker.
-                  Since the service has been deployed to production, we have been protected from down-time in our
-                  databases that historically led to loss of data, and we have been able to swap downstream services and
-                  platforms with no adverse consequences. Due to its horizontal scalability, the pipeline is also
-                  tolerant of individual node failures and is expected to be scalable with minimal changes for the next
-                  5-10 years.
+                  My first project at Lumin was architecting and implementing a cloud data pipeline. The data pipeline
+                  leverages Apache Kafka, and the micro services built to facilitate the pipeline now handle over 2
+                  billion requests per day. The services are all horizontally scalable, and have remained cost efficient
+                  and effective over the past two years.
                 </p>
                 <p>
-                  After finishing work on the data pipeline, my next few projects were developing and deploying high
-                  priority features to facilitate company partnerships and to improve the homeowner experience of the
-                  Lumin Smart Panel. During these projects, I developed a command line app and API for improving the
-                  developer experience of pushing new device builds to our fleet of devices, and retrieving information
-                  on devices. The command line app / API has enabled wave based deployments of new builds and greatly
-                  improved the developer experience, enabling other engineers to easily and safely deploy builds or find
-                  device details.
+                  After completing the data pipeline project, I bolstered internal tooling with the development of a
+                  hybrid CLI and HTTP API used for aggregating device information across service boundaries and
+                  providing a single pane of glass for device management.
                 </p>
                 <p>
-                  I am currently still working at Lumin, developing more features and improving internal tools when time
+                  In more recent times I have worked on high-priority integrations and partnerships, contributed to the
+                  development of our grid-service products, and collaborated with many members of the product software
+                  team on the development of our next iteration of software services.
+                </p>
+                <p>
+                  I am currently still working at Lumin, developing more services and improving internal tools when time
                   permits. Stay tuned!
                 </p>
               </ExperienceSection>
