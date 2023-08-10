@@ -214,6 +214,13 @@ const Resume: React.FC = () => {
 
           <div className={styles.resumeSectionContainer}>
             <div className={styles.skillContainer}>
+              <span className={styles.skillFramework}>Kubernetes</span>
+              <span className={styles.skillFramework}>Terraform</span>
+              <span className={styles.skillFramework}>Docker</span>
+              <span className={styles.skillFramework}>NATS</span>
+              <span className={styles.skillFramework}>Kafka</span>
+              <span className={styles.skillFramework}>OpenTelemetry</span>
+              <span className={styles.skillFramework}>Grafana</span>
               <span className={styles.skillLanguage}>Java</span>
               <span className={styles.skillLanguage}>Ruby</span>
               <span className={styles.skillLanguage}>JavaScript / TypeScript</span>
@@ -222,11 +229,9 @@ const Resume: React.FC = () => {
               <span className={styles.skillLanguage}>HTML</span>
               <span className={styles.skillLanguage}>CSS / SCSS</span>
               <span className={styles.skillFramework}>Ruby on Rails</span>
-              <span className={styles.skillFramework}>Java Spring</span>
               <span className={styles.skillFramework}>React</span>
-              <span className={styles.skillDatabase}>PostgreSQL</span>
+              <span className={styles.skillDatabase}>Postgres</span>
               <span className={styles.skillDatabase}>MySQL</span>
-              <span className={styles.skillDatabase}>Kafka</span>
               <span className={styles.skillTool}>Git</span>
               <span className={styles.skillTool}>Git Flow</span>
               <span className={styles.skillTool}>Vim</span>
