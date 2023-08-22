@@ -38,9 +38,9 @@ const Resume: React.FC = () => {
                   providing a single pane of glass for device management.
                 </p>
                 <p>
-                  In more recent times I have worked on high-priority integrations and partnerships, contributed to the
-                  development of our grid-service products, and collaborated with many members of the product software
-                  team on the development of our next iteration of software services.
+                  In more recent times I have worked on integrations and partnerships, contributed to the development of
+                  our grid-service products, and collaborated with many members of the product software team on the
+                  development of our next iteration of software services.
                 </p>
                 <p>
                   I am currently still working at Lumin, developing more services and improving internal tools when time
