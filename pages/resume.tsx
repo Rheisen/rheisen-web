@@ -27,11 +27,17 @@ const Resume: React.FC = () => {
             <ExperienceArticle org={'ABB'}>
               <ExperienceSection title={'Principle Software Engineer'} timeframe={'Jan 2025 - Present'}>
                 <p>
-                  Lumin was acquired by ABB in January of 2025. My first project post-acquisition was an integrations
-                  cloud service that builds on concepts developed three years prior, allowing for secure and stable
-                  connections with third party device APIs by acting as a connection proxy for our IoT devices. Notably,
-                  this enabled the rollout of additional cloud integrations without requiring any changes or software
-                  deployments on IoT devices.
+                  <a
+                    href="https://new.abb.com/news/detail/122691/abb-expands-residential-energy-management-portfolio-in-north-america-with-lumin-acquisition"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Lumin was acquired by ABB in January of 2025
+                  </a>
+                  . My first project post-acquisition was an integrations cloud service that builds on concepts
+                  developed three years prior, allowing for secure and stable connections with third party device APIs
+                  by acting as a connection proxy for our IoT devices. Notably, this enabled the rollout of additional
+                  cloud integrations without requiring any changes or software deployments on IoT devices.
                 </p>
                 <p>
                   Building on the first project, my second project was writing a connection adapter leveraging the
