@@ -24,27 +24,92 @@ const Resume: React.FC = () => {
           </div>
 
           <div className={styles.resumeSectionContainer}>
+            <ExperienceArticle org={'ABB'}>
+              <ExperienceSection title={'Principle Software Engineer'} timeframe={'Jan 2025 - Present'}>
+                <p>
+                  Lumin was acquired by ABB in January of 2025. My first project post-acquisition was an integrations
+                  cloud service that builds on concepts developed three years prior, allowing for secure and stable
+                  connections with third party device APIs by acting as a connection proxy for our IoT devices. Notably,
+                  this enabled the rollout of additional cloud integrations without requiring any changes or software
+                  deployments on IoT devices.
+                </p>
+                <p>
+                  Building on the first project, my second project was writing a connection adapter leveraging the
+                  authorization and device APIs of our hub product to enable multi-hub systems. Multi-hub systems
+                  leverage the local network and mDNS to permit one software system to control and monitor circuits from
+                  up to four local hub hardware devices (over 48 single poll circuits).
+                </p>
+              </ExperienceSection>
+            </ExperienceArticle>
             <ExperienceArticle org={'Lumin'}>
-              <ExperienceSection title={'Backend Software Engineer'} timeframe={'Jan 2021 - Present'}>
+              <ExperienceSection title={'Senior Software Engineer'} timeframe={'Jan 2023 - Jan 2025'}>
                 <p>
-                  My first project at Lumin was architecting and implementing a cloud data pipeline. The data pipeline
-                  leverages Apache Kafka, and the micro services built to facilitate the pipeline now handle over 2
-                  billion requests per day. The services are all horizontally scalable, and have remained cost efficient
-                  and effective over the past two years.
+                  I was promoted to Senior Software Engineer as we started working on a transition to a new software
+                  stack. My first project was creating the scaffold for our new hub software application, and an
+                  internal service within it for managing connections to the hub hardware and eventually third party
+                  devices. During this time I also developed wrappers around logging and tracing packages for increased
+                  observability and debugging of backend software code. These wrappers are now part of the standard
+                  service build template, along with many of the patterns developed in organizing this repo. I also
+                  brought NATS and SQLite into the tech stack to better track quickly moving and slow moving local data.
                 </p>
                 <p>
-                  After completing the data pipeline project, I bolstered internal tooling with the development of a
-                  hybrid CLI and HTTP API used for aggregating device information across service boundaries and
-                  providing a single pane of glass for device management.
+                  In the process of bringing in NATS, due to my past experiences with Kafka I created my second internal
+                  library, a library that serves as an abstraction over eventing. The library at the time of this
+                  writing now has adapters now for around four different streaming platforms. It has allowed us to use
+                  the same logic for writing and reading events locally as we do for writing and reading events in many
+                  cloud services.
                 </p>
                 <p>
-                  In more recent times I have worked on integrations and partnerships, contributed to the development of
-                  our grid-service products, and collaborated with many members of the product software team on the
-                  development of our next iteration of software services.
+                  After working on the skeleton of the hub software application and passing that to other team members,
+                  I worked on standing up a number of core micro services in the cloud, working closely with another
+                  software engineer on the microgrid platform team. The most important of which likely being a
+                  fine-grained authorization model (third internal library) and authorization service. This library
+                  features a cool mechanism that generate test cases based on the authorization schema, which automates
+                  the process of fine-grained authorization test cases (of which there are many). We also brought in
+                  first class support for organization users of our cloud API services.
                 </p>
                 <p>
-                  I am currently still working at Lumin, developing more services and improving internal tools when time
-                  permits. Stay tuned!
+                  I also worked on much of the authorization middleware services, and worked closely to develop a
+                  caching middleware that allows slow changing data on IoT devices to be captured and made available by
+                  our cloud API.
+                </p>
+                <p>
+                  Additionally, I led the development of a new micro service for managing device software, built on the
+                  concepts used for the internal CLI / API written a few years back. The new service includes additional
+                  features for automatic software deployments and tracking software versions for devices with different
+                  product requirements.
+                </p>
+              </ExperienceSection>
+              <ExperienceSection title={'Backend Software Engineer'} timeframe={'Jan 2021 - Jan 2023'}>
+                <p>
+                  I joined Lumin as its 4th engineer. At the time when I joined, the backend services were under a lot
+                  of stress, and our data pipelines and data sinks were struggling to keep up with increasing traffic
+                  due to a lack of scalability dimensions. In my first few months I worked with our devops engineer and
+                  built a data pipeline on top of Apache Kafka. I implemented an adaptable, horizontally scalable Golang
+                  micro service that now handles over five billion requests per day, collecting readings from IoT
+                  devices across the country and landing data in a variety of data sinks. Over the past four years, the
+                  service has scaled and operated with a 99.9999% uptime, remaining cost efficient.
+                </p>
+                <p>
+                  After working to stabilize the data pipeline, I spent time reviewing time-series data stores and
+                  worked with the engineering team to transition from OpenTSDB to Timescale Cloud for our product facing
+                  time-series data. After making the transition and tuning our time series table models, the switch
+                  improved queries for our in-app data browser across the board, and in some instances by an order of
+                  magnitude. The service also led to a sharp reduction in data storage costs when combined with the
+                  adoption of Apache Iceberg.
+                </p>
+                <p>
+                  In addition to the time-series database switch, I worked at this time on a few cloud API features, and
+                  began working with the software services on our IoT device (the Lumin LSP). I worked with my direct
+                  manager to implement improved automations for the panel, and created my first internal library for
+                  managing connections with third party APIs.
+                </p>
+                <p>
+                  My experiences working with software on our IoT devices led me to create an internal CLI / HTTP API
+                  for managing device software deployments. At a company hackathon I expanded upon that tool so that
+                  information from across a variety of services could be aggregated and used to make software deployment
+                  decisions and filters (e.g. filtering deployments based on some criteria that previously was not
+                  co-located). We’ve now used that tool for device deployments for the past two/three years.
                 </p>
               </ExperienceSection>
             </ExperienceArticle>

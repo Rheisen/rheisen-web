@@ -37,7 +37,7 @@ export const InfoCard: React.FC<InfoCardProps> = (props: InfoCardProps = default
         {props.location ? (
           <div className={styles.iconInfoContainer}>
             <MapPin className={styles.pinIcon} size={24} />
-            <span>Charlottesville, VA</span>
+            <span>Philadelphia, PA</span>
           </div>
         ) : null}
         {props.email ? (
@@ -71,7 +71,7 @@ export const InfoCard: React.FC<InfoCardProps> = (props: InfoCardProps = default
           </React.Fragment>
         ) : null}
         {props.resume ? (
-          <a href="/documents/rheisen-dennis-resume.pdf" target="_blank" className={styles.buttonLink}>
+          <a href="/documents/rheisen-dennis-resume-2025.pdf" target="_blank" className={styles.buttonLink}>
             <Download className={styles.downloadIcon} size={24} />
             <span>Download Resume</span>
           </a>
